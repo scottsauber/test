@@ -19,7 +19,7 @@ jobs:
           cache: true
 
       - name: dotnet restore
-        run: dotnet restore --locked-mode
+        run: dotnet restore --locked-mode -v d
 
       - name: Build with dotnet
         run: dotnet build --configuration Release --no-restore
